@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About — Krithi</title>
+  <meta name="description" content="About Krithi: education at AJIET Mangalore, and technical skills in Java, HTML, and backend development.">
+  <link rel="canonical" href="https://example.com/about.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About — Krithi">
+  <meta property="og:description" content="Education and technical skills of Krithi, aspiring backend software engineer.">
+  <meta property="og:url" content="https://example.com/about.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">KRITHI <span class="brand__tag">// backend</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"><span>MENU</span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="about-heading" style="padding-top: calc(var(--nav-height) + var(--space-4));">
+      <p class="eyebrow">About</p>
+      <h1 id="about-heading">Getting to know the systems side of software.</h1>
+      <div class="about__grid">
+        <article class="module reveal">
+          <span class="tick-bl" aria-hidden="true"></span><span class="tick-br" aria-hidden="true"></span>
+          <p>
+            I'm Krithi, a Bachelor of Engineering student with an interest in
+            backend development — the part of software that handles logic,
+            data, and how systems actually work underneath the interface.
+            I'm currently building my foundations in Java and working
+            through small projects to understand core programming concepts
+            before taking on larger backend systems.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <p class="eyebrow">Education</p>
+      <h2 id="education-heading">Academic background</h2>
+      <div class="module reveal">
+        <span class="tick-bl" aria-hidden="true"></span><span class="tick-br" aria-hidden="true"></span>
+        <ul class="spec-list">
+          <li class="spec-list__row">
+            <span class="spec-list__label">Degree</span>
+            <span class="spec-list__value">B.E. (Bachelor of Engineering)</span>
+          </li>
+          <li class="spec-list__row">
+            <span class="spec-list__label">Institution</span>
+            <span class="spec-list__value">AJIET, Mangalore</span>
+          </li>
+          <li class="spec-list__row">
+            <span class="spec-list__label">Status</span>
+            <span class="spec-list__value">Expected graduation: 2028</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="skills-heading">
+      <p class="eyebrow">Skills</p>
+      <h2 id="skills-heading">Technical skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <span class="skill-card__icon" aria-hidden="true">JV</span>
+          <div>
+            <p class="skill-card__name">Java</p>
+            <p class="skill-card__type">Programming language</p>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-card__icon" aria-hidden="true">&lt;/&gt;</span>
+          <div>
+            <p class="skill-card__name">HTML</p>
+            <p class="skill-card__type">Markup language</p>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-card__icon" aria-hidden="true">BE</span>
+          <div>
+            <p class="skill-card__name">Backend Development</p>
+            <p class="skill-card__type">Area of focus</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Krithi. Built with semantic HTML5.</p>
+      <p><a href="contact.html">Get in touch &rarr;</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

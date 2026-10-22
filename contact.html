@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact — Krithi</title>
+  <meta name="description" content="Get in touch with Krithi about internship or collaboration opportunities in software and backend development.">
+  <link rel="canonical" href="https://example.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact — Krithi">
+  <meta property="og:description" content="Get in touch about internship or collaboration opportunities.">
+  <meta property="og:url" content="https://example.com/contact.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html">KRITHI <span class="brand__tag">// backend</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"><span>MENU</span></button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="contact-heading" style="padding-top: calc(var(--nav-height) + var(--space-4));">
+      <p class="eyebrow">Contact</p>
+      <h1 id="contact-heading">Let's connect</h1>
+      <p style="max-width:48ch;">Reach out directly below, or send a message using the form — every field works with keyboard alone.</p>
+    </section>
+
+    <section aria-labelledby="contact-links-heading">
+      <h2 id="contact-links-heading" class="visually-hidden">Direct contact links</h2>
+      <div class="module reveal contact-block">
+        <span class="tick-bl" aria-hidden="true"></span><span class="tick-br" aria-hidden="true"></span>
+
+        <div class="contact-row">
+          <span class="contact-row__label">
+            <svg class="contact-row__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            Email
+          </span>
+          <a href="mailto:[PASTE EMAIL HERE]">[PASTE EMAIL HERE]</a>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-row__label">
+            <svg class="contact-row__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.93.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.68-.1-.26-.45-1.29.1-2.68 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.39.2 2.42.1 2.68.64.69 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            GitHub
+          </span>
+          <a href="[PASTE GITHUB LINK HERE]">[PASTE GITHUB LINK HERE]</a>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-row__label">
+            <svg class="contact-row__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 11v5M8 8v.01M12 16v-5M16 16v-3a2 2 0 0 0-4 0"/></svg>
+            LinkedIn
+          </span>
+          <a href="[PASTE LINKEDIN LINK HERE]">[PASTE LINKEDIN LINK HERE]</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">Send a message</h2>
+
+      <div id="form-status" role="status" aria-live="polite" hidden></div>
+
+      <form id="contact-form" novalidate aria-describedby="form-instructions">
+        <p id="form-instructions" class="hint">Fields marked "required" must be filled in before submitting.</p>
+
+        <fieldset>
+          <legend>Your details</legend>
+
+          <div class="form-field" id="name-field">
+            <label for="name">Full name <span aria-hidden="true">*</span><span class="visually-hidden">required</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-required="true" aria-describedby="name-error">
+            <p class="form-field__error" id="name-error" hidden>Please enter your name.</p>
+          </div>
+
+          <div class="form-field" id="email-field">
+            <label for="email">Email address <span aria-hidden="true">*</span><span class="visually-hidden">required</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="email-hint email-error">
+            <p class="hint" id="email-hint">Used only to reply to you.</p>
+            <p class="form-field__error" id="email-error" hidden>Please enter a valid email address.</p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Your message</legend>
+
+          <div class="form-field" id="reason-field">
+            <label for="reason">Reason for contact</label>
+            <select id="reason" name="reason">
+              <option value="internship">Internship opportunity</option>
+              <option value="project">Project collaboration</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-field" id="message-field">
+            <label for="message">Message <span aria-hidden="true">*</span><span class="visually-hidden">required</span></label>
+            <textarea id="message" name="message" rows="6" required aria-required="true" aria-describedby="message-error"></textarea>
+            <p class="form-field__error" id="message-error" hidden>Please enter a message.</p>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn--primary">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Krithi. Built with semantic HTML5.</p>
+      <p><a href="index.html">Back to home</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
